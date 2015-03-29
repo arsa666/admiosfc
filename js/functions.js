@@ -6,10 +6,12 @@ function makeDragabble () {
     _.each(players, function (player) {
         $('#' + player.id).draggable();
     });
+
+    $('#ball').draggable();
 }
 
 $(window).load(function() {
-    $('.loader').fadeOut('slow');
+    $('.whirly').remove();
 });
 
 $( document ).ready(function() {
@@ -35,7 +37,7 @@ $( document ).ready(function() {
 
     $('#seven-only').click(function () {
         var players = $('.player');
-        var left = 500;
+        var left = 350;
         _.each(players, function (player) {
             player = $(player);
             if (!player.hasClass('titular')) {

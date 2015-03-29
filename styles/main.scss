@@ -1,13 +1,3 @@
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url('../images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
-}
-
 .background {
     background: url(../images/campo.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -17,6 +7,13 @@
   position:relative;
   height: 100%;
   width: 100%;
+}
+
+.whirly{
+  position: absolute;
+  top:350px;
+  left:700px;
+  z-index:9999;
 }
 
 .player{
@@ -31,6 +28,24 @@
         border: 2px solid #FFF;
         border-radius: 25px;
         cursor: move;
+    }
+    label{
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+}
+
+.ball{
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    img {
+        width: 65px;
+        height: 65px;
+        cursor: move;
+        z-index:9999;
     }
     label{
         font-size: 20px;
@@ -114,6 +129,11 @@
 
 #dago{  
   left: 800px;
+  top: 300px;  
+}
+
+#ball{  
+  left: 950px;
   top: 300px;  
 }
 
