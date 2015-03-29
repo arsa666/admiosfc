@@ -28,11 +28,14 @@ $( document ).ready(function() {
     }, 1000);
 
     $('#createOpponent').click(function () {
-        var opponentElem  = $('<div class="opponent"><label>Enemy</label><img src="images/opponent.png"  /></div>');
+        var opponentElem  = $('<div class="opponent"><label>Enemy</label><label class="close">x</label><img src="images/opponent.png"  /></div>');
 
         $('.background').append(opponentElem);
-
         opponentElem.draggable();
+        $('.close').click(function (e) {
+            var elem = $(e.currentTarget);
+            elem.parent().remove();
+        });
     });
 
     $('#seven-only').click(function () {

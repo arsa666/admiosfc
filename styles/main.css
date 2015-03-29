@@ -63,6 +63,10 @@
     font-size: 20px;
     color: red;
     text-transform: capitalize; }
+  .opponent label.close {
+    color: #000;
+    padding-left: 10px;
+    cursor: pointer; }
 
 .btn {
   background: #3498db;
