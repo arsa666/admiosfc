@@ -8,6 +8,10 @@ function makeDragabble () {
     });
 }
 
+$(window).load(function() {
+    $('.loader').fadeOut('slow');
+});
+
 $( document ).ready(function() {
     console.log( 'ready!' );
 
@@ -17,14 +21,29 @@ $( document ).ready(function() {
     $('.background').css('height', height + 'px');
     $('.background').css('width', width + 'px');
 
-    makeDragabble();
+    setTimeout(function () {
+        makeDragabble();
+    }, 1000);
 
-    $('#createOpponent').click(function (e) {
-        var opponentElem  = $('<div class="player"><label>Opponent</label><img src="images/opponent.png"  /></div>');
+    $('#createOpponent').click(function () {
+        var opponentElem  = $('<div class="opponent"><label>Enemy</label><img src="images/opponent.png"  /></div>');
 
         $('.background').append(opponentElem);
 
         opponentElem.draggable();
+    });
+
+    $('#seven-only').click(function () {
+        var players = $('.player');
+        var left = 500;
+        _.each(players, function (player) {
+            player = $(player);
+            if (!player.hasClass('titular')) {
+                player.css('top', '0px');
+                player.css('left', left + 'px');
+                left += 75;
+            }
+        });
     });
 
 });
