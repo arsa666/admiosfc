@@ -9,99 +9,115 @@
     <script type="text/javascript" src="jsLibs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="jsLibs/underscore-min.js"></script>
     <script type="text/javascript" src="jsLibs/jquery.ui.touch-punch.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="styles/main.css" rel="stylesheet">
+    
+        
     <link rel="stylesheet" href="http://css-spinners.com/css/spinner/whirly.css" type="text/css">
 </head>
 <body>
-    <div class='background'>
-        <div class='whirly'>Loading...</div>
-        <div id='arsa' class='player titular'>
-            <label>arsa</label>
-            <img src='images/arsa.png'  />
+    <div class='whirly'>Loading...</div>
+    <div class=''>
+        <div class="row">
+           <div class='col-md-12 col-sm-12 bench'>
+                <div class='row'>
+                    <div class='col-md-4 col-sm-4'>
+                        <button class='btn btn-primary  btn-lg' id='seven-only'>Titulares</button>
+                        <button class='btn btn-danger  btn-lg' id='createOpponent'>Enemy++</button>
+                    </div>
+                </div>
+           </div>
         </div>
-        <div id='luis' class='player'>
-            <label>luis</label>
-            <img src='images/luis.png'  />
+        <div class="row">
+            <div class='col-md-12 col-sm-12 campo-container'>
+                <img src='images/campo.png' id='campo-img' />
+                <div id='arsa' class='player titular left-flank'>
+                    <label>arsa</label>
+                    <img src='images/arsa.png'  />
+                </div>
+                <div id='luis' class='player left-flank'>
+                    <label>luis</label>
+                    <img src='images/luis.png'  />
+                </div>
+                <div id='fercho' class='player left-flank'>
+                    <label>fercho</label>
+                    <img src='images/fercho.png'  />
+                </div>
+                   
+
+                <div id='chicho' class='player center-flank'>
+                    <label>chicho</label>
+                    <img src='images/chicho.png'  />
+                </div>
+
+                <div id='dago' class='player titular center-flank'>
+                    <label>dago</label>
+                    <img src='images/dago.png'  />
+                </div>       
+
+                <div id='carlos' class='player titular right-flank'>
+                    <label>carlos</label>
+                    <img src='images/carlos.png'  />
+                </div>       
+
+                <div id='alexis' class='player right-flank'>
+                    <label>alexis</label>
+                    <img src='images/alexis.png'  />
+                </div>
+
+                <div id='nestor' class='player right-flank'>
+                    <label>nestor</label>
+                    <img src='images/nestor.png'/>
+                </div>
+
+                <div id='vanessa' class='player titular left-flank'>
+                    <label>vanessa</label>
+                    <img src='images/vanessa.png'  />
+                </div>
+
+                <div id='lena' class='player left-flank'>
+                    <label>lena</label>
+                    <img src='images/lena.png'  />
+                </div>
+
+                <div id='leo' class='player titular center-flank'>
+                    <label>leo</label>
+                    <img src='images/leo.png'  />
+                </div>
+
+                <div id='rafa' class='player titular center-flank'>
+                    <label>rafa</label>
+                    <img src='images/rafa.png'  />
+                </div>
+
+                <div id='omar' class='player center-flank'>
+                    <label>omar</label>
+                    <img src='images/omar.png'  />
+                </div>
+
+                <div id='fernando' class='player center-flank'>
+                    <label>fernando</label>
+                    <img src='images/fernando.png'  />
+                </div>
+
+                <div id='laura' class='player titular right-flank'>
+                    <label>laura</label>
+                    <img src='images/laura.png'  />
+                </div>
+
+                <div id='ale' class='player right-flank'>
+                    <label>ale</label>
+                    <img src='images/ale.png'  />
+                </div>
+
+                <div id='ball' class='ball titular center-flank'>
+                    <img src='images/ball.gif'  />
+                </div>
+ 
+            </div> 
         </div>
-        <div id='fercho' class='player'>
-            <label>fercho</label>
-            <img src='images/fercho.png'  />
-        </div>
-           
-
-        <div id='chicho' class='player'>
-            <label>chicho</label>
-            <img src='images/chicho.png'  />
-        </div>
-
-        <div id='dago' class='player titular'>
-            <label>dago</label>
-            <img src='images/dago.png'  />
-        </div>       
-
-        <div id='carlos' class='player titular'>
-            <label>carlos</label>
-            <img src='images/carlos.png'  />
-        </div>       
-
-        <div id='alexis' class='player'>
-            <label>alexis</label>
-            <img src='images/alexis.png'  />
-        </div>
-
-        <div id='nestor' class='player'>
-            <label>nestor</label>
-            <img src='images/nestor.png'/>
-        </div>
-
-        <div id='vanessa' class='player titular'>
-            <label>vanessa</label>
-            <img src='images/vanessa.png'  />
-        </div>
-
-        <div id='lena' class='player'>
-            <label>lena</label>
-            <img src='images/lena.png'  />
-        </div>
-
-        <div id='leo' class='player titular'>
-            <label>leo</label>
-            <img src='images/leo.png'  />
-        </div>
-
-        <div id='rafa' class='player titular'>
-            <label>rafa</label>
-            <img src='images/rafa.png'  />
-        </div>
-
-        <div id='omar' class='player'>
-            <label>omar</label>
-            <img src='images/omar.png'  />
-        </div>
-
-        <div id='fernando' class='player'>
-            <label>fernando</label>
-            <img src='images/fernando.png'  />
-        </div>
-
-        <div id='laura' class='player titular'>
-            <label>laura</label>
-            <img src='images/laura.png'  />
-        </div>
-
-        <div id='ale' class='player'>
-            <label>ale</label>
-            <img src='images/ale.png'  />
-        </div>
-
-        <div id='ball' class='ball titular'>
-            <img src='images/ball.gif'  />
-        </div>
-
-        <div>
-            <button class='btn' id='seven-only'>7 Players Only</button>
-            <button class='btn' id='createOpponent'>Create Opponent</button>
-        </div>      
-    </div>   
+          
+    </div>
 </body>
 </html>

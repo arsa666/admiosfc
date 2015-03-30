@@ -16,35 +16,36 @@ $(window).load(function() {
 
 $( document ).ready(function() {
     console.log( 'ready!' );
-
+    var enemyNumber = 1;
     var height = $(document).height();
     var width = $(document).width();
 
-    $('.background').css('height', height + 'px');
-    $('.background').css('width', width + 'px');
+    // if (height > width) {
+    //     alert('Please rotate your device horizontally and refresh the page.');
+    // }
 
     setTimeout(function () {
         makeDragabble();
     }, 1000);
 
     $('#createOpponent').click(function () {
-        var opponentElem  = $('<div class="opponent"><label>Enemy</label><label class="close">x</label><img src="images/opponent.png"  /></div>');
-
-        $('.background').append(opponentElem);
+        var opponentElem  = $('<div class="opponent"><div class="enemy-header"><span>Enemy # ' + enemyNumber++ + '</span><span class="glyphicon glyphicon-remove close"></span></div><img src="images/opponent.png"  /></div>');
+        $('.campo-container').append(opponentElem);
         opponentElem.draggable();
         $('.close').click(function (e) {
             var elem = $(e.currentTarget);
-            elem.parent().remove();
+            elem.parent().parent().remove();
+
         });
     });
 
     $('#seven-only').click(function () {
         var players = $('.player');
-        var left = 350;
+        var left = Math.floor($(document).width() * 0.27);
         _.each(players, function (player) {
             player = $(player);
             if (!player.hasClass('titular')) {
-                player.css('top', '0px');
+                player.css('top', '-105px');
                 player.css('left', left + 'px');
                 left += 75;
             }

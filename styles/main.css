@@ -1,12 +1,22 @@
-.background {
-  background: url(../images/campo.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  height: 100%;
-  width: 100%; }
+body {
+  background-color: #000;
+  display: block; }
+
+.bench {
+  height: 105px;
+  color: red;
+  font-size: 30px;
+  padding: 20px; }
+
+.btn {
+  margin-left: 10px; }
+
+.campo-container {
+  position: relative; }
+
+#campo-img {
+  width: 100%;
+  height: 100%; }
 
 .whirly {
   position: absolute;
@@ -51,130 +61,93 @@
   color: #fff;
   width: 75px;
   height: 75px;
-  top: 300px;
-  left: 675px; }
+  top: 45%;
+  left: 45%; }
   .opponent img {
     width: 65px;
     height: 65px;
     border: 2px solid #FFF;
     border-radius: 25px;
     cursor: move; }
-  .opponent label {
+  .opponent span {
     font-size: 20px;
     color: red;
     text-transform: capitalize; }
-  .opponent label.close {
+  .opponent span.close {
     color: #000;
     padding-left: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    line-height: 26px; }
+  .opponent .enemy-header {
+    width: 100px; }
 
-.btn {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 16px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  border: #fff 2px solid; }
+.left-flank {
+  top: 10%; }
 
-.btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none; }
+.center-flank {
+  top: 40%; }
+
+.right-flank {
+  top: 70%; }
 
 #arsa {
-  left: 900px;
-  top: 100px; }
+  left: 70%; }
 
 #luis {
-  left: 800px;
-  top: 100px; }
+  left: 63%; }
 
 #fercho {
-  left: 700px;
-  top: 100px; }
+  left: 56%; }
 
 #chicho {
-  left: 700px;
-  top: 300px; }
+  left: 55%; }
 
 #dago {
-  left: 800px;
-  top: 300px; }
+  left: 62%; }
 
 #ball {
-  left: 950px;
-  top: 300px; }
+  right: 50px; }
 
 #carlos {
-  left: 900px;
-  top: 500px; }
+  left: 70%; }
 
 #alexis {
-  left: 800px;
-  top: 500px; }
+  left: 63%; }
 
 #nestor {
-  left: 700px;
-  top: 500px; }
+  left: 56%; }
 
 #vanessa {
   position: absolute;
-  left: 300px;
-  top: 100px; }
+  left: 30%; }
 
 #lena {
   position: absolute;
-  left: 200px;
-  top: 100px; }
+  left: 23%; }
 
 #leo {
   position: absolute;
-  left: 10px;
-  top: 300px; }
+  left: 10px; }
 
 #rafa {
-  left: 400px;
-  top: 300px; }
+  left: 35%; }
 
 #omar {
-  left: 300px;
-  top: 300px; }
+  left: 28%; }
 
 #fernando {
-  left: 200px;
-  top: 300px; }
+  left: 21%; }
 
 #laura {
-  left: 300px;
-  top: 500px; }
+  left: 30%; }
 
 #ale {
-  left: 200px;
-  top: 500px; }
-
-#share {
-  top: 10px;
-  left: 30px; }
+  left: 23%; }
 
 #createOpponent {
-  position: absolute;
   top: 10px;
   left: 10px; }
 
 #seven-only {
-  position: absolute;
   top: 10px;
   left: 200px; }
